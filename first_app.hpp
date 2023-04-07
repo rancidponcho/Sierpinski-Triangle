@@ -31,7 +31,7 @@ class FirstApp {
     void createCommandBuffers();
     void drawFrame();
 
-    SveWindow sveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+    SveWindow sveWindow{WIDTH, HEIGHT, "Sierpinski Triangle"};
     SveDevice sveDevice{sveWindow};
     SveSwapChain sveSwapChain{sveDevice, sveWindow.getExtent()};
     std::unique_ptr<SvePipeline> svePipeline;

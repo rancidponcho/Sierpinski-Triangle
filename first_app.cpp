@@ -26,7 +26,7 @@ void FirstApp::run() {
 
 void FirstApp::loadModels() {
     std::vector<SveModel::Vertex> vertices{};
-    SierpinskiTriangle(vertices, 6, {-0.5f, 0.5f}, {0.5f, 0.5f}, {0.0f, -0.5f});
+    SierpinskiTriangle(vertices, 5, {-0.5f, 0.5f}, {0.5f, 0.5f}, {0.0f, -0.5f});
     sveModel = std::make_unique<SveModel>(sveDevice, vertices);
 }
 
